@@ -18,10 +18,11 @@ public class LionParametrized {
     private boolean hasMane;
     Lion lion;
 
-    public LionParametrized(String sex, boolean hasMane){
+    public LionParametrized(String sex, boolean hasMane) {
         this.sex = sex;
         this.hasMane = hasMane;
     }
+
     @Parameterized.Parameters
     public static Object[][] getSumData() {
         return new Object[][]{
@@ -29,6 +30,7 @@ public class LionParametrized {
                 {"Самка", false},
         };
     }
+
     @Test
     public void lionConstructorMane() throws Exception {
         lion = new Lion(feline, sex);

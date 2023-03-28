@@ -4,7 +4,9 @@ import com.example.Feline;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
 import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
@@ -17,6 +19,7 @@ public class FelineParametrized {
         this.animalKind = animalKind;
         this.expectedListOfFood = listOfFood;
     }
+
     @Parameterized.Parameters
     public static Object[][] getSumData() {
         return new Object[][]{
@@ -24,6 +27,7 @@ public class FelineParametrized {
                 {"Хищник", List.of("Животные", "Птицы", "Рыба")},
         };
     }
+
     @Test//метод который проверяет работу getFood
     public void getFoodShouldWork() throws Exception {
         List<String> actual = feline.getFood(animalKind);

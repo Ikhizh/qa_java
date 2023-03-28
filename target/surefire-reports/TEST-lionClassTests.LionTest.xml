@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="lionClassTests.LionTest" time="0" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="lionClassTests.LionTest" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -66,8 +66,8 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="lionClassTests.LionTest" name="lionThrowException" time="0"/>
+  <testcase classname="lionClassTests.LionTest" name="lionThrowException" time="0.001"/>
   <testcase classname="lionClassTests.LionTest" name="lionGetKittens" time="0"/>
-  <testcase classname="lionClassTests.LionTest" name="leLionShouldHaveMane" time="0"/>
-  <testcase classname="lionClassTests.LionTest" name="catShouldEatMeat" time="0"/>
+  <testcase classname="lionClassTests.LionTest" name="leLionShouldHaveMane" time="0.002"/>
+  <testcase classname="lionClassTests.LionTest" name="catShouldEatMeat" time="0.001"/>
 </testsuite>

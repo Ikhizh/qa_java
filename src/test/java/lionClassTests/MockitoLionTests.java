@@ -13,6 +13,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 public class MockitoLionTests {
     @Mock
     Feline feline;
+
     @Test //тест проверяет вызовется ли метод eatMeat при вызове getFood
     public void lionShouldEatMeat() throws Exception {
         Lion lionSpy = Mockito.spy(new Lion(feline, "Самка"));

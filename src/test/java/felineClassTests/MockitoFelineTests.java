@@ -1,4 +1,5 @@
 package felineClassTests;
+
 import com.example.Feline;
 import org.junit.Assert;
 import org.junit.Test;
@@ -14,13 +15,14 @@ public class MockitoFelineTests {
 
     @Test
     public void getKittensWithParam() {
-    feline.getKittens(2);
-    Assert.assertEquals(2, feline.getKittens(2));
+        feline.getKittens(2);
+        Assert.assertEquals(2, feline.getKittens(2));
     }
+
     @Test
-    public void getKittensNOParamInvokeGetKittensWith1(){
-    feline.getKittens();
-    Mockito.verify(feline, Mockito.times(1)).getKittens(1);
+    public void getKittensNOParamInvokeGetKittensWith1() {
+        feline.getKittens();
+        Mockito.verify(feline, Mockito.times(1)).getKittens(1);
     }
 
 }

@@ -2,9 +2,11 @@ package felineClassTests;
 
 import com.example.Feline;
 import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;
 
@@ -17,22 +19,25 @@ public class FelineTest {
         List<String> actual = feline.eatMeat();
         assertEquals(expected, actual);
     }
+
     @Test
-    public void felineGetFamily(){
+    public void felineGetFamily() {
         String expected = "Кошачьи";
         String actual = feline.getFamily();
         assertEquals(expected, actual);
     }
+
     @Test
-    public void  felineGetKittens(){
+    public void felineGetKittens() {
         int expected = 1;
         int actual = feline.getKittens();
         assertEquals(expected, actual);
     }
+
     @Test
-    public void felineGetKittensCount(){
-    int expected = 3;
-    int actual = feline.getKittens(3);
+    public void felineGetKittensCount() {
+        int expected = 3;
+        int actual = feline.getKittens(3);
     }
 
     @Test

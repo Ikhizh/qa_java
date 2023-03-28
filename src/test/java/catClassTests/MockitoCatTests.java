@@ -1,4 +1,5 @@
 package catClassTests;
+
 import com.example.Cat;
 import com.example.Feline;
 import org.junit.Test;
@@ -11,8 +12,9 @@ import org.mockito.junit.MockitoJUnitRunner;
 public class MockitoCatTests {
     @Mock
     Feline feline;
+
     @Test //тест проверяет вызовется ли метод eatMeat при вызове getFood
-      public void catShouldEatMeat() throws Exception {
+    public void catShouldEatMeat() throws Exception {
         Cat catSpy = Mockito.spy(new Cat(feline));
         catSpy.getFood();
         Mockito.verify(feline).eatMeat();
